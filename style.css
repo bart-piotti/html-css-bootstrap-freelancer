@@ -1,0 +1,70 @@
+body{
+    background-color: lightgreen;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.navbar-default {
+    background-color: #000058;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: lightgreen;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: lightgreen;
+}
+
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+}
+
+.jumbotron img {
+    height: 300px;
+}
+
+.decoration div:first-child, .decoration div:last-child {
+    height: 5px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.jumbotron .decoration div {
+    display: inline-block;
+}
+
+.jumbotron .decoration .glyphicon-star {
+    font-size: 30px;
+    line-height: 55px;
+    color: white;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
