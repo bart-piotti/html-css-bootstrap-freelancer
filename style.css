@@ -1,11 +1,7 @@
-body{
-    background-color: lightgreen;
-}
-
 .navbar-default .navbar-brand {
     color: white;
-    font-size: 15px;
     font-weight: bold;
+    padding: 40px 0;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -13,10 +9,14 @@ body{
     font-size: 13px;
     font-weight: bold;
 }
-
+.navbar-default .navbar-nav {
+    padding: 25px 0;
+}
 .navbar-default {
     background-color: #000058;
     border: none;
+    margin-bottom: 0;
+    height: 100px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -38,6 +38,8 @@ body{
 .jumbotron {
     background-color: transparent;
     text-align: center;
+    background-color: lightgreen;
+    padding-top: 100px;
 }
 
 .jumbotron img {
@@ -67,4 +69,65 @@ body{
 .jumbotron h1 {
     font-size: 50px;
     font-weight: bold;
+}
+
+#separatore {
+    width: 300px;
+    font-size: 20px;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+#separatore_scuro {
+    width: 300px;
+    font-size: 20px;
+    margin: auto;
+    color: black;
+    position: relative;
+}
+
+#separatore::before, #separatore::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: calc(50% - 25px);
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#separatore_scuro::before, #separatore_scuro::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: calc(50% - 25px);
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#separatore::before, #separatore_scuro::before{
+    left: 0;
+}
+#separatore::after, #separatore_scuro::after{
+    right: 0;
+}
+
+section h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+section #separatore_scuro {
+    margin-bottom: 50px;
+}
+
+section div img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
